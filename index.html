@@ -96,7 +96,7 @@
                 <th>Day</th>
                 <th>PR/PO</th>
                 <th>Inbox / Passthru Setup</th>
-                <th>Quotes</th>
+                <th>Quotes / I.E.</th>
                 <th>Projects / Unconfirmed PO / Backup</th>
               </tr>
             </thead>
@@ -121,7 +121,7 @@
                 <th>Day</th>
                 <th>PR/PO</th>
                 <th>Inbox / Passthru Setup</th>
-                <th>Quotes</th>
+                <th>Quotes / I.E.</th>
                 <th>Projects / Unconfirmed PO / Backup</th>
               </tr>
             </thead>
@@ -161,7 +161,7 @@
     const ROLE_KEYS = [
       "PR/PO",
       "Inbox / Passthru Setup",
-      "Quotes",
+      "Quotes / I.E.",
       "Projects / Unconfirmed PO / Backup"
     ];
 
@@ -173,32 +173,32 @@
 
     const DEFAULT_SCHEDULE = {
       A: {
-        Monday:   {"PR/PO":"Brad",      "Inbox / Passthru Setup":"Christian", "Quotes":"Luke",      "Projects / Unconfirmed PO / Backup":"Trav"},
-        Tuesday:  {"PR/PO":"Trav",      "Inbox / Passthru Setup":"Brad",      "Quotes":"Christian", "Projects / Unconfirmed PO / Backup":"Luke"},
-        Wednesday:{"PR/PO":"Luke",      "Inbox / Passthru Setup":"Trav",      "Quotes":"Brad",      "Projects / Unconfirmed PO / Backup":"Christian"},
-        Thursday: {"PR/PO":"Christian", "Inbox / Passthru Setup":"Luke",      "Quotes":"Trav",      "Projects / Unconfirmed PO / Backup":"Brad"},
-        Friday:   {"PR/PO":"Brad",      "Inbox / Passthru Setup":"Christian", "Quotes":"Luke",      "Projects / Unconfirmed PO / Backup":"Trav"}
+        Monday:   {"PR/PO":"Brad",      "Inbox / Passthru Setup":"Christian", "Quotes / I.E.":"Luke",      "Projects / Unconfirmed PO / Backup":"Trav"},
+        Tuesday:  {"PR/PO":"Trav",      "Inbox / Passthru Setup":"Brad",      "Quotes / I.E.":"Christian", "Projects / Unconfirmed PO / Backup":"Luke"},
+        Wednesday:{"PR/PO":"Luke",      "Inbox / Passthru Setup":"Trav",      "Quotes / I.E.":"Brad",      "Projects / Unconfirmed PO / Backup":"Christian"},
+        Thursday: {"PR/PO":"Christian", "Inbox / Passthru Setup":"Luke",      "Quotes / I.E.":"Trav",      "Projects / Unconfirmed PO / Backup":"Brad"},
+        Friday:   {"PR/PO":"Brad",      "Inbox / Passthru Setup":"Christian", "Quotes / I.E.":"Luke",      "Projects / Unconfirmed PO / Backup":"Trav"}
       },
       B: {
-        Monday:   {"PR/PO":"Trav",      "Inbox / Passthru Setup":"Brad",      "Quotes":"Christian", "Projects / Unconfirmed PO / Backup":"Luke"},
-        Tuesday:  {"PR/PO":"Luke",      "Inbox / Passthru Setup":"Trav",      "Quotes":"Brad",      "Projects / Unconfirmed PO / Backup":"Christian"},
-        Wednesday:{"PR/PO":"Christian", "Inbox / Passthru Setup":"Luke",      "Quotes":"Trav",      "Projects / Unconfirmed PO / Backup":"Brad"},
-        Thursday: {"PR/PO":"Brad",      "Inbox / Passthru Setup":"Christian", "Quotes":"Luke",      "Projects / Unconfirmed PO / Backup":"Trav"},
-        Friday:   {"PR/PO":"Trav",      "Inbox / Passthru Setup":"Brad",      "Quotes":"Christian", "Projects / Unconfirmed PO / Backup":"Luke"}
+        Monday:   {"PR/PO":"Trav",      "Inbox / Passthru Setup":"Brad",      "Quotes / I.E.":"Christian", "Projects / Unconfirmed PO / Backup":"Luke"},
+        Tuesday:  {"PR/PO":"Luke",      "Inbox / Passthru Setup":"Trav",      "Quotes / I.E.":"Brad",      "Projects / Unconfirmed PO / Backup":"Christian"},
+        Wednesday:{"PR/PO":"Christian", "Inbox / Passthru Setup":"Luke",      "Quotes / I.E.":"Trav",      "Projects / Unconfirmed PO / Backup":"Brad"},
+        Thursday: {"PR/PO":"Brad",      "Inbox / Passthru Setup":"Christian", "Quotes / I.E.":"Luke",      "Projects / Unconfirmed PO / Backup":"Trav"},
+        Friday:   {"PR/PO":"Trav",      "Inbox / Passthru Setup":"Brad",      "Quotes / I.E.":"Christian", "Projects / Unconfirmed PO / Backup":"Luke"}
       },
       C: {
-        Monday:   {"PR/PO":"Luke",      "Inbox / Passthru Setup":"Trav",      "Quotes":"Brad",      "Projects / Unconfirmed PO / Backup":"Christian"},
-        Tuesday:  {"PR/PO":"Christian", "Inbox / Passthru Setup":"Luke",      "Quotes":"Trav",      "Projects / Unconfirmed PO / Backup":"Brad"},
-        Wednesday:{"PR/PO":"Brad",      "Inbox / Passthru Setup":"Christian", "Quotes":"Luke",      "Projects / Unconfirmed PO / Backup":"Trav"},
-        Thursday: {"PR/PO":"Trav",      "Inbox / Passthru Setup":"Brad",      "Quotes":"Christian", "Projects / Unconfirmed PO / Backup":"Luke"},
-        Friday:   {"PR/PO":"Luke",      "Inbox / Passthru Setup":"Trav",      "Quotes":"Brad",      "Projects / Unconfirmed PO / Backup":"Christian"}
+        Monday:   {"PR/PO":"Luke",      "Inbox / Passthru Setup":"Trav",      "Quotes / I.E.":"Brad",      "Projects / Unconfirmed PO / Backup":"Christian"},
+        Tuesday:  {"PR/PO":"Christian", "Inbox / Passthru Setup":"Luke",      "Quotes / I.E.":"Trav",      "Projects / Unconfirmed PO / Backup":"Brad"},
+        Wednesday:{"PR/PO":"Brad",      "Inbox / Passthru Setup":"Christian", "Quotes / I.E.":"Luke",      "Projects / Unconfirmed PO / Backup":"Trav"},
+        Thursday: {"PR/PO":"Trav",      "Inbox / Passthru Setup":"Brad",      "Quotes / I.E.":"Christian", "Projects / Unconfirmed PO / Backup":"Luke"},
+        Friday:   {"PR/PO":"Luke",      "Inbox / Passthru Setup":"Trav",      "Quotes / I.E.":"Brad",      "Projects / Unconfirmed PO / Backup":"Christian"}
       },
       D: {
-        Monday:   {"PR/PO":"Christian", "Inbox / Passthru Setup":"Luke",      "Quotes":"Trav",      "Projects / Unconfirmed PO / Backup":"Brad"},
-        Tuesday:  {"PR/PO":"Brad",      "Inbox / Passthru Setup":"Christian", "Quotes":"Luke",      "Projects / Unconfirmed PO / Backup":"Trav"},
-        Wednesday:{"PR/PO":"Trav",      "Inbox / Passthru Setup":"Brad",      "Quotes":"Christian", "Projects / Unconfirmed PO / Backup":"Luke"},
-        Thursday: {"PR/PO":"Luke",      "Inbox / Passthru Setup":"Trav",      "Quotes":"Brad",      "Projects / Unconfirmed PO / Backup":"Christian"},
-        Friday:   {"PR/PO":"Christian", "Inbox / Passthru Setup":"Luke",      "Quotes":"Trav",      "Projects / Unconfirmed PO / Backup":"Brad"}
+        Monday:   {"PR/PO":"Christian", "Inbox / Passthru Setup":"Luke",      "Quotes / I.E.":"Trav",      "Projects / Unconfirmed PO / Backup":"Brad"},
+        Tuesday:  {"PR/PO":"Brad",      "Inbox / Passthru Setup":"Christian", "Quotes / I.E.":"Luke",      "Projects / Unconfirmed PO / Backup":"Trav"},
+        Wednesday:{"PR/PO":"Trav",      "Inbox / Passthru Setup":"Brad",      "Quotes / I.E.":"Christian", "Projects / Unconfirmed PO / Backup":"Luke"},
+        Thursday: {"PR/PO":"Luke",      "Inbox / Passthru Setup":"Trav",      "Quotes / I.E.":"Brad",      "Projects / Unconfirmed PO / Backup":"Christian"},
+        Friday:   {"PR/PO":"Christian", "Inbox / Passthru Setup":"Luke",      "Quotes / I.E.":"Trav",      "Projects / Unconfirmed PO / Backup":"Brad"}
       }
     };
 
